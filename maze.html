@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <link href="maze.css" rel="stylesheet" type="text/css">
+
+    <head>
+        <h1>Maze Solver</h1>
+        
+
+        <br><br>
+    </head>
+
+    <body>
+        <select id = "select-algorithm">
+            <option value = "">Please choose an option</option>
+            <option value = "A* Search Algorithm">A* Search Algorithm</option>
+        </select>
+        <select id = "speed" Choose the Speed (Default Fast)>
+            <option value = "Fastest">Speed: Fastest</option>
+            <option value = "Fast">Speed: Fast</option>
+            <option value = "Medium">Speed: Average</option>
+            <option value = "Slow">Speed: Slow</option>
+            <option value = "Slowest">Speed: Slowest</option>
+
+
+        </select>
+        <button onclick = "solveMaze()">Solve!</button>
+        <button onclick = "reset()">Reset</button>
+        <button onclick = "changeEndPoints()">Select Start/End Points</button>
+
+        <meta charset='utf-8' />
+        <title>Solving a Maze!</title>
+       <hr>
+        <p id="outcome"></p>
+        
+        <canvas id="myCanvas" width="1000" height="600">
+        </canvas>
+        <script src="maze.js"></script>
+    </body>
+</html>
