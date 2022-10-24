@@ -12,14 +12,16 @@
     <body>
         <select id = "select-algorithm">
             <option value = "">Please choose an option</option>
-            <option value = "A* Search Algorithm">A* Search Algorithm</option>
+            <option value = "Dijkstra's algorithm">Dijkstra's algorithm</option>
         </select>
         <select id = "speed" Choose the Speed (Default Fast)>
             <option value = "Fastest">Speed: Fastest</option>
             <option value = "Fast">Speed: Fast</option>
-            <option value = "Medium">Speed: Average</option>
+            <option value = "Average">Speed: Average</option>
             <option value = "Slow">Speed: Slow</option>
             <option value = "Slowest">Speed: Slowest</option>
+            <option value = "Instant">Speed: Instant</option>
+
 
 
         </select>
@@ -34,6 +36,9 @@
         
         <canvas id="myCanvas" width="1000" height="600">
         </canvas>
-        <script src="maze.js"></script>
+        <script type="text/javascript" src="maze.js"></script>
+        <script type="module" src="algorithms.js" ></script>
+
+
     </body>
 </html>
