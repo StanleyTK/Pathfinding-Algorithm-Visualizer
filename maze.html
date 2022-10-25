@@ -13,6 +13,8 @@
         <select id = "select-algorithm">
             <option value = "">Please choose an option</option>
             <option value = "Dijkstra's algorithm">Dijkstra's algorithm</option>
+            <option value = "A* Search">A* Search</option>
+
         </select>
         <select id = "speed" Choose the Speed (Default Fast)>
             <option value = "Fastest">Speed: Fastest</option>
@@ -27,7 +29,7 @@
         </select>
         <button onclick = "solveMaze()">Solve!</button>
         <button onclick = "reset()">Reset</button>
-        <button onclick = "changeEndPoints()">Select Start/End Points</button>
+        <!-- <button onclick = "changeEndPoints()">Select Start/End Points</button> -->
 
         <meta charset='utf-8' />
         <title>Solving a Maze!</title>
@@ -36,8 +38,10 @@
         
         <canvas id="myCanvas" width="1000" height="600">
         </canvas>
-        <script type="text/javascript" src="maze.js"></script>
-        <script type="module" src="algorithms.js" ></script>
+        <script src="maze.js"></script>
+        <script src="dijkstraAlgorithm.js" ></script>
+        <script src="astarSearch.js" ></script>
+
 
 
     </body>
