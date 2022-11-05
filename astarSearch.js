@@ -16,7 +16,7 @@ function InstantAstar() {
         console.log(xLocation + " " + yLocation);
         console.log(index);
 
-        console.log(queue);
+        console.log(queue); 
         queue.splice(index,1);
         console.log(queue);
   
