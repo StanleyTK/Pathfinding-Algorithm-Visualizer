@@ -1,4 +1,4 @@
-# Pathfinding-Algorithm-Visualizer
+# Pathfinding Algorithm Visualizer
 
 Pathfinding algorithsm are a method of finding a route between two nodes. They are used in wide different range of applications, from finding the locations in the map, to social networking applications. I built this pathfinding algorithm visualizer because I wanted to do more research on pathfinding algorithms and to research how they really work. This program demonstrates the how the most used algorithms works and visualizes them in a 2D table.
 
