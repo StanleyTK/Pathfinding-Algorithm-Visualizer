@@ -1,46 +1,34 @@
 <!doctype html>
 <html>
+<head>
+    <meta charset='utf-8' />
+    <title>Maze Solver</title>
     <link href="maze.css" rel="stylesheet" type="text/css">
-
-    <head>
-        <h1>Maze Solver</h1>
-        <br><br>
-    </head>
-
-    <body>
-        <select id = "select-algorithm">
-            <option value = "">Please choose an option</option>
-            <option value = "Dijkstra's algorithm">Dijkstra's algorithm</option>
-            <option value = "A* Search">A* Search</option>
-
+</head>
+<body>
+    <h1>Maze Solver</h1>
+    <div class="controls">
+        <select id="select-algorithm">
+            <option value="">Please choose an option</option>
+            <option value="Dijkstra's algorithm">Dijkstra's algorithm</option>
+            <option value="A* Search">A* Search</option>
         </select>
-        <select id = "speed" Choose the Speed (Default Fast)>
-            <option value = "Fastest">Speed: Fastest</option>
-            <option value = "Fast">Speed: Fast</option>
-            <option value = "Average">Speed: Average</option>
-            <option value = "Slow">Speed: Slow</option>
-            <option value = "Slowest">Speed: Slowest</option>
-            <option value = "Instant">Speed: Instant</option>
-
-
-
+        <select id="speed">
+            <option value="Fastest">Speed: Fastest</option>
+            <option value="Fast">Speed: Fast</option>
+            <option value="Average">Speed: Average</option>
+            <option value="Slow">Speed: Slow</option>
+            <option value="Slowest">Speed: Slowest</option>
+            <option value="Instant">Speed: Instant</option>
         </select>
-        <button onclick = "solveMaze()">Solve!</button>
-        <button onclick = "reset()">Reset</button>
-        <!-- <button onclick = "changeEndPoints()">Select Start/End Points</button> -->
-
-        <meta charset='utf-8' />
-        <title>Solving a Maze!</title>
-       <hr>
-        <p id="outcome"></p>
-        
-        <canvas id="myCanvas" width="1000" height="600">
-        </canvas>
-        <script src="maze.js"></script>
-        <script src="dijkstraAlgorithm.js" ></script>
-        <script src="astarSearch.js" ></script>
-
-
-
-    </body>
+        <button onclick="solveMaze()">Solve!</button>
+        <button onclick="reset()">Reset</button>
+    </div>
+    <hr>
+    <p id="outcome"></p>
+    <canvas id="myCanvas" width="1000" height="600"></canvas>
+    <script src="maze.js"></script>
+    <script src="dijkstraAlgorithm.js"></script>
+    <script src="astarSearch.js"></script>
+</body>
 </html>
